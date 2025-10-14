@@ -77,8 +77,20 @@ closeClassesDialogBtn.addEventListener('click', () => {
 // Class item click handlers
 const classItems = document.querySelectorAll('.class-item');
 classItems.forEach(item => {
-  item.addEventListener('click', () => {
+  item.addEventListener('click', async () => {
     const classCode = item.getAttribute('data-code');
-    alert(`You clicked on ${classCode}. This would navigate to the class page.`);
+    const targetUrl = `/class-pages/${classCode.toLowerCase()}.html`;
+
+    // Try fetching the page (using HEAD method is lightweight)
+    try {
+      const response = await fetch(targetUrl, { method: 'HEAD' });
+      if (response.ok) {
+        window.location.href = targetUrl;
+      } else {
+        alert(`Page for ${classCode} does not exist.`);
+      }
+    } catch (error) {
+      alert(`Could not check page for ${classCode}.`);
+    }
   });
 });

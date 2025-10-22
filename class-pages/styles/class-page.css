@@ -4,6 +4,10 @@ h1#title-header {
     padding: 12px;
 }
 
+h3.project-title {
+    font-weight: bolder;
+}
+
 embed.pdf {
     width: 75vw;
     height: 50vw;

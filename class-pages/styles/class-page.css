@@ -3,3 +3,8 @@ h1#title-header {
     font-size: x-large;
     padding: 12px;
 }
+
+embed.pdf {
+    width: 75vw;
+    height: 50vw;
+}

@@ -3,3 +3,12 @@ h1#title-header {
     font-size: x-large;
     padding: 12px;
 }
+
+h3.project-title {
+    font-weight: bolder;
+}
+
+embed.pdf {
+    width: 75vw;
+    height: 50vw;
+}

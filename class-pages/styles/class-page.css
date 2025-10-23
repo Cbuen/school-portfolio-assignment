@@ -12,3 +12,7 @@ embed.pdf {
     width: 75vw;
     height: 50vw;
 }
+
+div.project {
+    padding-top: 44px;
+}

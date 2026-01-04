@@ -13,6 +13,11 @@ embed.pdf {
     height: 50vw;
 }
 
+<<<<<<< HEAD
+div.project {
+    padding-top: 44px;
+=======
 .project {
     padding-top: 30px;
+>>>>>>> dev-branch
 }
